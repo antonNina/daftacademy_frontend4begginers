@@ -1,0 +1,115 @@
+/* General */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+h2, h3, p {
+    margin: 0;
+}
+
+.content-section {
+    min-height: 100vh;
+    margin: 0;
+    color: #EF008E;
+    padding: 0 25px 0 225px;
+}
+
+.section-header {
+    padding-top: 10px;
+    padding-bottom: 25px;
+    font-family: OpenSans, Arial, serif;
+    font-weight: bold;
+    text-align: right;
+}
+
+.content-section:nth-child(even) {
+    background-color: #25072e;
+}
+
+.content-section:nth-child(odd) {
+    background-color: #dbd8fb;
+}
+
+/* Header */
+header {
+    position: fixed;
+    top: 45px;
+    left: 45px;
+}
+
+.navigation-list {
+    list-style: none;
+}
+
+.navigation-list a {
+    text-decoration: none;
+    color: #EF008E;
+}
+
+/* Home */
+
+/* About */
+
+#about img {
+    width: 70%;
+    float: right;
+    margin: 0 15px;
+}
+
+/* Concerts */
+
+.gallery-element {
+    display: inline-block;
+    width: 48%;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.gallery-element img {
+    width: 100%;
+}
+
+.gallery-element-info p {
+    float: left;
+}
+
+.gallery-element-info button {
+    float: right;
+}
+
+/* Video */
+
+/* Photos */
+.photos-gallery img {
+    width: 32%;
+}
+
+/* Contact */
+#contact img {
+    float: left;
+    margin: 0 25px;
+    width: 45%;
+}
+
+.form {
+    margin: 50px 25px 10px 25px;
+}
+
+.form-field {
+    margin: 10px 0;
+}
+
+/* Footer */
+footer {
+    position: fixed;
+    bottom: 45px;
+    left: 45px;
+}
+
+.social-media-list {
+    list-style: none;
+}
+
+
+
