@@ -3,21 +3,21 @@
 <head>
     <meta charset="utf-8" />
     <title> Poznaj zespół!</title>
-    <meta name="description"
-          content="Oficjalna strona zespołu 6bM" />
-    <meta name="keywords"
-          content="muzyka, rock, koncerty" />
+    <meta content="Oficjalna strona zespołu 6bM"
+          name="description" />
+    <meta content="muzyka, rock, koncerty"
+          name="keywords" />
 
-    <link rel="stylesheet"
-          type="text/css"
-          href="./style.css">
+    <link href="./style.css"
+          rel="stylesheet"
+          type="text/css">
 </head>
 
 <body>
 <header>
     <div id="logo">
-        <img src="daftgallery/logo.png"
-             alt="Logo" />
+        <img alt="Logo"
+             src="images/logo.png" />
     </div>
 
     <nav id="menu">
@@ -32,48 +32,72 @@
     </nav>
 </header>
 
-<section id="home"
-         class="content-section">
-    <h2 class="section-header">Home</h2>
+<section class="content-section"
+         id="home">
+    <h2 class="section-header hidden">Home</h2>
 
-    <div id="bandphoto">
-        <img src="daftgallery/band-member01.png"
-             alt="Band memeber photo" />
-        <img src="daftgallery/band-member02.png"
-             alt="Band memeber photo" />
-        <img src="daftgallery/band-member03.png"
-             alt="Band memeber photo" />
-        <img src="daftgallery/band-member04.png"
-             alt="Band memeber photo" />
+    <div class="band-gallery">
+        <div class="band-gallery-member">
+            <img alt="Band memeber photo"
+                 class="band-gallery-member-photo"
+                 src="images/band-member01.png" />
+            <p class="band-gallery-member-name">Kamil Zgondek</p>
+            <p class="band-gallery-member-description">Keyboard</p>
+        </div>
+
+        <div class="band-gallery-member">
+            <img alt="Band memeber photo"
+                 src="images/band-member02.png" />
+            <p class="band-gallery-member-name">Łukasz Furman</p>
+            <p class="band-gallery-member-description">Vocals</p>
+        </div>
+
+        <div class="band-gallery-member">
+            <img alt="Band memeber photo"
+                 src="images/band-member03.png" />
+            <p class="band-gallery-member-name">Kamil Majewski</p>
+            <p class="band-gallery-member-description">Drums</p>
+        </div>
+
+        <div class="band-gallery-member">
+            <img alt="Band memeber photo"
+                 src="images/band-member04.png" />
+            <p class="band-gallery-member-name">Daniel Cajzer</p>
+            <p class="band-gallery-member-description">Bass guitar</p>
+        </div>
     </div>
 </section>
 
-<section id="about"
-         class="content-section">
+<section class="content-section"
+         id="about">
     <h2 class="section-header">About</h2>
 
-    <img src="daftgallery/band01.jpg"
-         alt="Band members" />
+    <img alt="Band members"
+         src="images/band01.jpg" />
 
     <article>
         <h3 class="page-header">Lorem ipsum</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nibh augue, suscipit a, scelerisque sed,
-            lacinia in, mi. Cras vel lorem. Etiam pellentesque aliquet tellus. Phasellus pharetra nulla ac diam. Quisque
-            semper justo at risus. </p>
-        <p>Donec venenatis, turpis vel hendrerit interdum, dui ligula ultricies purus, sed posuere libero dui id
-            orci.</p>
+        <div class="about-description">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nibh augue, suscipit a, scelerisque sed,
+                lacinia in, mi. Cras vel lorem. Etiam pellentesque aliquet tellus. Phasellus pharetra nulla ac diam.
+                Quisque
+                semper justo at risus. </p>
+            <p>Donec venenatis, turpis vel hendrerit interdum, dui ligula ultricies purus, sed posuere libero dui id
+                orci.</p>
+        </div>
+
     </article>
 </section>
 
-<section id="concerts"
-         class="content-section">
+<section class="content-section"
+         id="concerts">
     <h2 class="section-header">Concerts</h2>
 
     <div class="gallery">
 
         <div class="gallery-element">
-            <img src="daftgallery/band02_WiechnikMarcin.jpg"
-                 alt="Band member" />
+            <img alt="Band member"
+                 src="images/band02_WiechnikMarcin.jpg" />
             <div class="gallery-element-info">
                 <p>Concert 1</p>
                 <button class="ticket_button"
@@ -84,8 +108,8 @@
         </div>
 
         <div class="gallery-element">
-            <img src="daftgallery/band03_WiechnikMarcin.jpg"
-                 alt="Band member" />
+            <img alt="Band member"
+                 src="images/band03_WiechnikMarcin.jpg" />
             <div class="gallery-element-info">
                 <p>Concert 2</p>
                 <button class="ticket_button"
@@ -95,8 +119,8 @@
         </div>
 
         <div class="gallery-element">
-            <img src="daftgallery/band04_JakubBodys.jpg"
-                 alt="Band member" />
+            <img alt="Band member"
+                 src="images/band04_JakubBodys.jpg" />
             <div class="gallery-element-info">
                 <p>Concert 3</p>
                 <button class="ticket_button"
@@ -106,8 +130,8 @@
         </div>
 
         <div class="gallery-element">
-            <img src="daftgallery/band05_JakubBodys.jpg"
-                 alt="Band member" />
+            <img alt="Band member"
+                 src="images/band05_JakubBodys.jpg" />
             <div class="gallery-element-info">
                 <p>Concert 4</p>
                 <button class="ticket_button"
@@ -118,53 +142,57 @@
     </div>
 </section>
 
-<section id="video"
-         class="content-section">
+<section class="content-section"
+         id="video">
     <h2 class="section-header">Videos</h2>
-    <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/AstRXh-vKNI"
-            frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
-</section>
-
-<section id="photos"
-         class="content-section">
-    <h2 class="section-header">Photos</h2>
-    <div class="photos-gallery">
-        <img src="daftgallery/band02_WiechnikMarcin.jpg"
-             alt="Band member" />
-        <img src="daftgallery/band03_WiechnikMarcin.jpg"
-             alt="Band member" />
-        <img src="daftgallery/band06_JakubBodys.jpg"
-             alt="Band member" />
-        <img src="daftgallery/band04_JakubBodys.jpg"
-             alt="Band member" />
-        <img src="daftgallery/band07.jpg"
-             alt="Band member" />
-        <img src="daftgallery/band08.jpg"
-             alt="Band member" />
-        <img src="daftgallery/band09.jpg"
-             alt="Band member" />
-        <img src="daftgallery/band10.jpg"
-             alt="Band member" />
-        <img src="daftgallery/band11.jpg"
-             alt="Band member" />
+    <div class="element-container">
+        <iframe
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                frameborder="0"
+                height="315"
+                src="https://www.youtube.com/embed/AstRXh-vKNI"
+                width="560"></iframe>
     </div>
 </section>
 
-<section id="contact"
-         class="content-section">
+<section class="content-section"
+         id="photos">
+    <h2 class="section-header">Photos</h2>
+    <div class="photos-gallery">
+        <img alt="Band member"
+             src="images/band02_WiechnikMarcin.jpg" />
+        <img alt="Band member"
+             src="images/band03_WiechnikMarcin.jpg" />
+        <img alt="Band member"
+             src="images/band06_JakubBodys.jpg" />
+        <img alt="Band member"
+             src="images/band04_JakubBodys.jpg" />
+        <img alt="Band member"
+             src="images/band07.jpg" />
+        <img alt="Band member"
+             src="images/band08.jpg" />
+        <img alt="Band member"
+             src="images/band09.jpg" />
+        <img alt="Band member"
+             src="images/band10.jpg" />
+        <img alt="Band member"
+             src="images/band11.jpg" />
+    </div>
+</section>
+
+<section class="content-section"
+         id="contact">
     <h2 class="section-header">Contact</h2>
-    <img src="daftgallery/band12.jpg"
-         alt="Band member" />
-    <div class="contact-info">
-        <div>
-            Tel: <a href="tel:00489990000">00 48 999 00 00</a>
+    <div class="contact-info-container">
+        <img alt="Band member"
+             src="images/band12.jpg" />
+        <div class="contact-info">
+            <div>
+                Tel: <a href="tel:00489990000">00 48 999 00 00</a>
+            </div>
+            <div>email: <a href="mailto:6bmband@mail.mail">6bmband@mail.mail</a></div>
         </div>
-        <div>email: <a href="mailto:6bmband@mail.mail">6bmband@mail.mail</a></div>
     </div>
 
     <div style="clear:both"></div>
@@ -172,19 +200,20 @@
     <form class="form">
         <div class="form-field">
             <label for="email">E-mail:</label>
-            <input type="text"
-                   id="email"
-                   name="email" />
+            <input id="email"
+                   name="email"
+                   type="text" />
         </div>
         <div class="form-field">
             <label for="topic">Topic:</label>
-            <input type="text"
-                   id="topic"
-                   name="topic" />
+            <input id="topic"
+                   name="topic"
+                   type="text" />
         </div>
         <div class="form-field">
-            <input type="submit"
+            <input class="button"
                    name="Contact us!"
+                   type="submit"
                    value="Submit" />
         </div>
     </form>
@@ -194,26 +223,26 @@
     <ul class="social-media-list">
         <li>
             <a href="https://www.facebook.com">
-                <img src="daftgallery/fb.svg"
-                     alt="FB link" />
+                <img alt="FB link"
+                     src="images/fb.svg" />
             </a>
         </li>
         <li>
             <a href="https://www.instagram.com">
-                <img src="daftgallery/insta.svg"
-                     alt="Instagram link" />
+                <img alt="Instagram link"
+                     src="images/insta.svg" />
             </a>
         </li>
         <li>
             <a href="https://www.lastfm.com">
-                <img src="daftgallery/last.svg"
-                     alt="Last link" />
+                <img alt="Last link"
+                     src="images/last.svg" />
             </a>
         </li>
         <li>
             <a href="https://www.youtube.com">
-                <img src="daftgallery/yout.svg"
-                     alt="YT link" />
+                <img alt="YT link"
+                     src="images/yout.svg" />
             </a>
         </li>
     </ul>

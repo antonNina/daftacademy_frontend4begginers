@@ -1,4 +1,12 @@
 /* General */
+body {
+    background-image: url("images/background.svg");
+    background-attachment: fixed;
+    font-family: OpenSans, Arial, serif;
+    letter-spacing: 1.5px;
+    color: #dbd8fb;
+}
+
 html, body {
     margin: 0;
     padding: 0;
@@ -10,36 +18,57 @@ h2, h3, p {
 
 .content-section {
     min-height: 100vh;
-    margin: 0;
-    color: #EF008E;
-    padding: 0 25px 0 225px;
+    margin: 0 25px 0 225px;
 }
 
 .section-header {
     padding-top: 10px;
     padding-bottom: 25px;
-    font-family: OpenSans, Arial, serif;
     font-weight: bold;
     text-align: right;
+    color: #EF008E;
 }
 
-.content-section:nth-child(even) {
-    background-color: #25072e;
+.hidden {
+    display: none;
 }
 
-.content-section:nth-child(odd) {
-    background-color: #dbd8fb;
+.button {
+    background: #301D3D;
+    font-family: Open-sans, serif;
+    color: #dbd8fb;
+    border: none;
+    font-size: 15px;
+    padding: 8px;
+    opacity: .7;
+    cursor: pointer;
+    text-transform: uppercase;
 }
 
 /* Header */
 header {
     position: fixed;
     top: 45px;
-    left: 45px;
+    left: 15px;
 }
 
 .navigation-list {
     list-style: none;
+    font-family: Helvetica, serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 30px;
+    letter-spacing: 10px;
+    padding-left: 5px;
+}
+
+.navigation-list li {
+    opacity: 0.4;
+}
+
+.navigation-list li:hover {
+    opacity: 1;
 }
 
 .navigation-list a {
@@ -48,17 +77,73 @@ header {
 }
 
 /* Home */
+#home {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+#home .band-gallery .band-gallery-member {
+    opacity: 0.5;
+    display: inline-block;
+}
+
+#home .band-gallery .band-gallery-member .band-gallery-member-name,
+#home .band-gallery .band-gallery-member .band-gallery-member-description {
+    opacity: 0;
+}
+
+#home .band-gallery .band-gallery-member:hover,
+#home .band-gallery .band-gallery-member:hover .band-gallery-member-name,
+#home .band-gallery .band-gallery-member:hover .band-gallery-member-description {
+    opacity: 1;
+}
+
+#home .band-gallery .band-gallery-member .band-gallery-member-name {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #E1DDE2;
+    text-transform: uppercase;
+}
+
+#home .band-gallery .band-gallery-member:hover .band-gallery-member-description {
+    opacity: 0.7;
+    color: #dbd8fb;
+}
 
 /* About */
+#about {
+    position: relative;
+}
 
 #about img {
     width: 70%;
     float: right;
     margin: 0 15px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#about article {
+    position: absolute;
+    width: 350px;
+    bottom: 15%;
+    left: 0;
+    background-color: #25072e;
+    padding: 25px;
+}
+
+#about .page-header {
+    margin-bottom: 1.5em;
+}
+
+#about .about-description p {
+    margin-bottom: 1em;
 }
 
 /* Concerts */
-
 .gallery-element {
     display: inline-block;
     width: 48%;
@@ -76,9 +161,36 @@ header {
 
 .gallery-element-info button {
     float: right;
+    background: #301D3D;
+    font-family: Open-sans, serif;
+    color: #dbd8fb;
+    border: none;
+    font-size: 15px;
+    padding: 8px;
+    opacity: .7;
+    cursor: pointer;
+    text-transform: uppercase;
 }
 
 /* Video */
+#video {
+    display: flex;
+    position: relative;
+    justify-items: center;
+    align-items: center;
+}
+
+#video .section-header {
+    align-self: end;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+iframe {
+    width: 70vw;
+    height: calc(70vw / 1.77);
+}
 
 /* Photos */
 .photos-gallery img {
@@ -92,24 +204,64 @@ header {
     width: 45%;
 }
 
+#contact a {
+    text-decoration: none;
+    color: #dbd8fb;
+}
+
+.contact-info-container {
+    display: flex;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 2em;
+}
+
 .form {
     margin: 50px 25px 10px 25px;
 }
 
 .form-field {
     margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-field > * {
+    margin: .3em 0;
+}
+
+.form-field input:not([type='submit']) {
+    background: #CCC8FF;
+    opacity: .1;
+    border: none;
+    height: 21px;
+    width: 190px;
+}
+
+.form-field input[type='submit'] {
+    width: 100px;
 }
 
 /* Footer */
 footer {
     position: fixed;
     bottom: 45px;
-    left: 45px;
+    left: 15px;
 }
 
 .social-media-list {
     list-style: none;
+    padding-left: 5px;
 }
 
+.social-media-list li {
+    opacity: 0.4;
+}
 
-
+.social-media-list li:hover {
+    opacity: 1;
+}
