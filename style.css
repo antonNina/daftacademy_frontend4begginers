@@ -12,7 +12,9 @@ body {
     background-attachment: fixed;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     margin: 0;
 }
 
@@ -55,12 +57,41 @@ PRZYCISKI
     background-color: rgba(204, 200, 255, 0.1);
     border-color: rgba(204, 200, 255, 0.1);
 
+
     color: rgba(204, 200, 255, 0.8);
     font-size: 12px;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 1.6px;
     cursor: pointer;
+}
+
+.button:hover {
+    background-color: rgba(204, 200, 255, 0.2);
+    color: rgba(204, 200, 255, 0.9);
+}
+
+.button:active {
+    background-color: rgba(204, 200, 255, 0.2);
+    color: rgba(204, 200, 255, 0.9);
+}
+
+.button:focus {
+    background-color: rgba(204, 200, 255, 0.1);
+    border-color: rgba(204, 200, 255, 0.5);
+    color: rgba(204, 200, 255, 0.8);
+
+}
+
+.button:disabled {
+    background-color: rgba(204, 200, 255, 0.1);
+    color: rgba(204, 200, 255, 0.8);
+}
+
+.button:active {
+    background-color: rgba(204, 200, 255, 0.1);
+    color: rgba(204, 200, 255, 0.8);
+
 }
 
 /* 
@@ -161,6 +192,26 @@ NAWIGACJA
     letter-spacing: 6.7px;
 }
 
+.page-navitagion__item a:hover {
+    color: rgba(239, 0, 142, 0.8);
+
+}
+
+.page-navitagion__item a:active {
+    color: rgba(239, 0, 142, 0.8);
+
+}
+
+.page-navitagion__item a:focus {
+    color: rgba(239, 0, 142, 0, 4);
+
+}
+
+.page-navitagion__item a:disabled {
+    color: rgba(239, 0, 142, 0.4);
+
+}
+
 /*
 ######################################
 LINKI DO SOCIAL MEDIA
@@ -168,13 +219,29 @@ LINKI DO SOCIAL MEDIA
 */
 
 
-.social-links__item + .social-links__item {
+.social-links__item+.social-links__item {
     margin-top: 15px;
 }
 
 .social-links__item img {
     width: 20px;
     height: 20px;
+}
+
+.social-links__link {
+    filter: opacity(60%);
+}
+
+.social-links__link:hover {
+    filter: opacity(100%);
+}
+
+.social-links__link:focus {
+    filter: opacity(100%);
+}
+
+.social-links__link:disabled {
+    filter: opacity(30%);
 }
 
 /* 
@@ -219,6 +286,17 @@ SEKCJA "HOME"
     flex-direction: row;
     align-items: center;
     flex-wrap: wrap;
+    /* filter: opacity(50%); */
+}
+
+
+
+.band-members .band-members__item {
+    filter: opacity(50%);
+}
+
+.band-members .band-members__item:hover {
+    filter: opacity(100%);
 }
 
 @media all and (max-width: 1488px) {
@@ -241,6 +319,30 @@ Tymczasowo ukrywamy tę sekcję, zajmiemy się nią na następnych zajęciach.
 .band-members__name,
 .band-members__desc {
     display: none;
+}
+
+.band-members__name:hover {
+    display: block;
+}
+
+.band-members__desc:hover {
+    display: block;
+}
+
+.band-members .band-members__item:hover .band-members__name {
+
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.6px;
+    display: block;
+}
+
+.band-members .band-members__item:hover .band-members__desc {
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 1.6px;
+    display: block;
 }
 
 /* 
@@ -393,6 +495,11 @@ SEKCJA "PHOTOS"
 .gallery__image {
     max-width: 100%;
     border-top: 3px solid #EF008E;
+    transition: transform 0.2s ease-in-out;
+}
+
+.gallery__image:hover {
+    transform: scale(1.1);
 }
 
 @media all and (max-width: 1264px) {
@@ -435,6 +542,34 @@ SEKCJA "CONTACT"
 
 .contact__form .button {
     margin-top: 20px;
+}
+
+.contact__form .button:hover {
+    background-color: rgba(204, 200, 255, 0.2);
+    color: rgba(204, 200, 255, 0.9);
+}
+
+.contact__form .button:active {
+    background-color: rgba(204, 200, 255, 0.2);
+    color: rgba(204, 200, 255, 0.9);
+}
+
+.contact__form .button:focus {
+    background-color: rgba(204, 200, 255, 0.1);
+    border-color: rgba(204, 200, 255, 0.5);
+    color: rgba(204, 200, 255, 0.8);
+
+}
+
+.contact__form .button:disabled {
+    background-color: rgba(204, 200, 255, 0.1);
+    color: rgba(204, 200, 255, 0.8);
+}
+
+.contact__form .button:active {
+    background-color: rgba(204, 200, 255, 0.1);
+    color: rgba(204, 200, 255, 0.8);
+
 }
 
 @media all and (max-width: 1272px) {
